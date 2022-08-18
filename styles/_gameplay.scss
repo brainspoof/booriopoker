@@ -1,0 +1,13 @@
+main.desktop{
+    .gameplay{
+        height: 100vh;
+
+        .col-lg-6:first-child{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: 5rem;
+        }
+    }
+}

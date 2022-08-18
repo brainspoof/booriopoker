@@ -1,0 +1,128 @@
+nav.desktop{
+    height: 90px;
+    width: 100vw;
+    padding: 20px;
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navicons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navicon{
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+            color: $inactive;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+
+            img{
+                width: auto;
+                height: 30px;
+            }
+
+            .active{
+                color: $active;
+            }
+        }
+    }
+}
+
+nav.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        position: relative;
+        z-index: 100;
+        display: block;
+        height: 90px;
+
+        .onscreen{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+
+            .moreandlogo{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+
+        .navicons{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            align-content: center;
+            background: $background-color;
+            transition: 0.3s;
+
+            .cross{
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+                cursor: pointer;
+            }
+
+            .navicon{
+                width: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                color: $inactive;
+                cursor: pointer;
+                transition: 0.3s;
+    
+                &:hover{
+                    transform: scale(1.05);
+                }
+    
+                img{
+                    width: auto;
+                    height: 50px;
+                }
+    
+                .active{
+                    color: $active;
+                }
+            }
+        }
+
+        .inactive{
+            transform: translateX(-100%);
+        }
+
+        .active{
+            transform: translateX(0%);
+        }
+    }
+}

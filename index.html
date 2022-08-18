@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Boorio Poker</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@701,200,500,301,201,1,300,2,601,600,401,501,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <!-- page background -->
+    <div class="background">
+        <img src="./assets/backgroundblured.png" alt="BG Blur">
+    </div>
+
+    <!-- Desktop Navbar -->
+    <nav class="desktop">
+        <img class="logo" src="./assets/pokerlogo.png" alt="Fibswap Logo">
+
+        <div class="navicons">
+            <span class="navicon">
+                <img src="./assets/home.png" alt="">
+
+                <p>Home</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/dex.png" alt="">
+                    
+                <p>DEx</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/nfts.png" alt="">
+
+                <p>NFTs</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/charts.png" alt="">
+
+                <p>Portfolio</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/buycryptoactive.png" alt="">
+                    
+                <p class="active">Buy Crypto</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/partners.png" alt="">
+                    
+                <p>Partners</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/help.png" alt="">
+                    
+                <p>Support</p>
+            </span>
+        </div>
+
+        <button class="accentbtn"> <span class="text accent-text">Download App</span> </button>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <nav class="mobile">
+
+        <div class="onscreen">
+            <div class="moreandlogo">
+                <svg onclick="toggle_nav(true)" width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.32056 10.1899H17.7561C17.9788 10.1899 18.1663 10.1108 18.3186 9.95264C18.4768 9.78857 18.5559 9.59814 18.5559 9.38135C18.5559 9.15869 18.4768 8.97119 18.3186 8.81885C18.1663 8.66064 17.9788 8.58154 17.7561 8.58154H1.32056C1.10376 8.58154 0.919189 8.66064 0.766846 8.81885C0.614502 8.97705 0.53833 9.16455 0.53833 9.38135C0.53833 9.59814 0.614502 9.78857 0.766846 9.95264C0.919189 10.1108 1.10376 10.1899 1.32056 10.1899ZM1.32056 6.21729H17.7561C17.9788 6.21729 18.1663 6.14111 18.3186 5.98877C18.4768 5.83057 18.5559 5.64307 18.5559 5.42627C18.5559 5.20361 18.4768 5.01318 18.3186 4.85498C18.1663 4.69092 17.9788 4.60889 17.7561 4.60889H1.32056C1.10376 4.60889 0.919189 4.69092 0.766846 4.85498C0.614502 5.01318 0.53833 5.20361 0.53833 5.42627C0.53833 5.63721 0.614502 5.82178 0.766846 5.97998C0.919189 6.13818 1.10376 6.21729 1.32056 6.21729ZM1.32056 2.25342H17.7561C17.9788 2.25342 18.1663 2.17725 18.3186 2.0249C18.4768 1.8667 18.5559 1.6792 18.5559 1.4624C18.5559 1.23975 18.4768 1.05225 18.3186 0.899902C18.1663 0.741699 17.9788 0.662598 17.7561 0.662598H1.32056C1.10376 0.662598 0.919189 0.741699 0.766846 0.899902C0.614502 1.05225 0.53833 1.23975 0.53833 1.4624C0.53833 1.67334 0.614502 1.85791 0.766846 2.01611C0.919189 2.17432 1.10376 2.25342 1.32056 2.25342Z" fill="white"/>
+                </svg>
+                  
+                <img class="logo" src="./assets/pokerlogo.png" alt="Fibswap Logo">
+            </div>
+    
+            <button class="accentbtn"> <span class="text accent-text">Download App</span> </button>
+        </div>
+
+        <div class="navicons inactive">
+            <div class="cross" onclick="toggle_nav(false)">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.9805 39.0391C22.6237 39.0391 25.0977 38.5378 27.4023 37.5352C29.707 36.5456 31.7383 35.1719 33.4961 33.4141C35.2539 31.6562 36.6341 29.625 37.6367 27.3203C38.6393 25.0026 39.1406 22.5286 39.1406 19.8984C39.1406 17.2682 38.6393 14.8008 37.6367 12.4961C36.6341 10.1784 35.2539 8.14062 33.4961 6.38281C31.7383 4.625 29.7005 3.2513 27.3828 2.26172C25.0781 1.25911 22.6107 0.757812 19.9805 0.757812C17.3503 0.757812 14.8763 1.25911 12.5586 2.26172C10.2539 3.2513 8.22266 4.625 6.46484 6.38281C4.70703 8.14062 3.32682 10.1784 2.32422 12.4961C1.33464 14.8008 0.839844 17.2682 0.839844 19.8984C0.839844 22.5286 1.33464 25.0026 2.32422 27.3203C3.32682 29.625 4.70703 31.6562 6.46484 33.4141C8.22266 35.1719 10.2539 36.5456 12.5586 37.5352C14.8763 38.5378 17.3503 39.0391 19.9805 39.0391ZM19.9805 37.5547C17.5456 37.5547 15.2604 37.099 13.125 36.1875C10.9896 35.276 9.10807 34.013 7.48047 32.3984C5.86589 30.7708 4.60286 28.8893 3.69141 26.7539C2.77995 24.6185 2.32422 22.3333 2.32422 19.8984C2.32422 17.4635 2.77995 15.1784 3.69141 13.043C4.60286 10.9076 5.86589 9.02604 7.48047 7.39844C9.10807 5.77083 10.9896 4.5013 13.125 3.58984C15.2604 2.67839 17.5456 2.22266 19.9805 2.22266C22.4284 2.22266 24.7201 2.67839 26.8555 3.58984C28.9909 4.5013 30.8659 5.77083 32.4805 7.39844C34.1081 9.02604 35.3776 10.9076 36.2891 13.043C37.2005 15.1784 37.6562 17.4635 37.6562 19.8984C37.6562 22.3333 37.2005 24.6185 36.2891 26.7539C35.3776 28.8893 34.1081 30.7708 32.4805 32.3984C30.8659 34.013 28.9909 35.276 26.8555 36.1875C24.7201 37.099 22.4284 37.5547 19.9805 37.5547ZM14.375 28.6875C14.5312 28.6875 14.6615 28.6549 14.7656 28.5898C14.8698 28.5117 14.9674 28.4076 15.0586 28.2773L19.8828 21.0508H20L24.7852 28.2773C24.8763 28.4076 24.9674 28.5117 25.0586 28.5898C25.1628 28.6549 25.2995 28.6875 25.4688 28.6875C25.6641 28.6875 25.8268 28.6224 25.957 28.4922C26.1003 28.362 26.1719 28.1992 26.1719 28.0039C26.1719 27.8477 26.1133 27.6849 25.9961 27.5156L20.8203 19.8789L26.0547 12.1836C26.1719 12.0143 26.2305 11.8581 26.2305 11.7148C26.2305 11.5326 26.1654 11.3828 26.0352 11.2656C25.9049 11.1354 25.7357 11.0703 25.5273 11.0703C25.3841 11.0703 25.2604 11.1029 25.1562 11.168C25.0521 11.2331 24.9544 11.3372 24.8633 11.4805L20.0781 18.707H19.9609L15.1953 11.4805C15.0911 11.3372 14.987 11.2331 14.8828 11.168C14.7786 11.1029 14.6419 11.0703 14.4727 11.0703C14.2904 11.0703 14.1276 11.1354 13.9844 11.2656C13.8542 11.3958 13.7891 11.5586 13.7891 11.7539C13.7891 11.9102 13.8542 12.0794 13.9844 12.2617L19.1016 19.8594L13.8477 27.5742C13.7435 27.7435 13.6914 27.8997 13.6914 28.043C13.6914 28.2253 13.7565 28.3815 13.8867 28.5117C14.0169 28.6289 14.1797 28.6875 14.375 28.6875Z" fill="white"/>
+                </svg>    
+            </div>
+
+            <span class="navicon">
+                <img src="./assets/home.png" alt="">
+
+                <p>Home</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/dex.png" alt="">
+                    
+                <p>DEx</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/nfts.png" alt="">
+
+                <p>NFTs</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/charts.png" alt="">
+
+                <p>Portfolio</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/buycryptoactive.png" alt="">
+                    
+                <p class="active">Buy Crypto</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/partners.png" alt="">
+                    
+                <p>Partners</p>
+            </span>
+
+            <span class="navicon">
+                <img src="./assets/help.png" alt="">
+                    
+                <p>Support</p>
+            </span>
+        </div>
+    </nav>
+
+    <!-- Main Content Starts -->
+
+    <main class="mobile">
+
+    <div class="hero horizontalcenter">
+        <p class="announcement description">🎉 It's here! The world's first crypto poker app</p>
+
+        <div class="main horizontalcenter">
+            <h1 class="accent-text">CRYPTO POKER</h1>
+            <p class="description">World's first poker game played with crypto</p>
+
+            <img src="./assets/displayimg1.png" alt="First Display">
+            <button class="download"><img src="./assets/apple.svg" alt="apple"> <span>Get on iOS</span></button>
+            <button class="download"><img src="./assets/playstore.svg" alt="playstore"> <span>Get on Android</span></button>
+        </div>
+    </div>
+
+    <div class="gameplay horizontalcenter">
+        <h1 class="accent-text">Play Different</h1>
+        <p class="description">Playing with crypto couldn't be easier! Deposit your crypto to our secure server and get playing in minutes. Play a range of different types, from low entry to Sit & Go's we have created a wonderful playing experience for every skill range.</p>
+        <img src="./assets/displayimg2.png" alt="Second Display">
+    </div>
+
+    <div class="rewards horizontalcenter">
+        <h1 class="accent-text">Special Rewards</h1>
+        <p class="description">Unlock special rewards by purchasing a "golden 24 hour ticket" with ORIO. Unlock special rewards and extra abilities (create your own tournaments, custom backgrounds and tables as well as NFT rewards and other bonuses!</p>
+        <img src="./assets/gift.svg" alt="gift">
+        <button class="accentbtn"> <span class="text accent-text">Buy ORIO now</span> </button>
+    </div>
+
+    </main>
+
+    <main class="desktop">
+
+        <div class="main row">
+            <div class="col-lg-6">
+                <p class="announcement description">🎉 It's here! The world's first crypto poker app</p>
+                <h1 class="accent-text">CRYPTO POKER</h1>
+                <p class="description titledisc">World's first poker game played with crypto</p>
+
+                <button class="download"><img src="./assets/apple.svg" alt="apple"> <span>Get on iOS</span></button>
+                <button class="download"><img src="./assets/playstore.svg" alt="playstore"> <span>Get on Android</span></button>
+            </div>
+
+            <div class="col-lg-6 center">
+                <img class="displayimg" src="./assets/displayimg1.png" alt="First Display">
+            </div>
+        </div>
+
+        <div class="gameplay row">
+            <div class="col-lg-6">
+                <h1 class="accent-text">Play Different</h1>
+                <p class="description">Playing with crypto couldn't be easier! Deposit your crypto to our secure server and get playing in minutes. Play a range of different types, from low entry to Sit & Go's we have created a wonderful playing experience for every skill range.</p>
+            </div>
+
+            <div class="col-lg-6 center">
+                <img class="displayimg" src="./assets/displayimg2.png" alt="Second Display">
+            </div>
+        </div>
+
+        <div class="rewards horizontalcenter">
+            <h1 class="accent-text">Special Rewards</h1>
+            <p class="description">Unlock special rewards by purchasing a "golden 24 hour ticket" with ORIO. Unlock special rewards and extra abilities (create your own tournaments, custom backgrounds and tables as well as NFT rewards and other bonuses!</p>
+            <img src="./assets/gift.svg" alt="gift">
+            <button class="accentbtn"> <span class="text accent-text">Buy ORIO now</span> </button>
+        </div>
+
+    </main>
+
+    <!-- Main Content Ends -->
+
+    <script src="./script.js"></script>
+</body>
+</html>

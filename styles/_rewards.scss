@@ -1,0 +1,16 @@
+.rewards{
+    margin: 2rem;
+
+    img{
+        margin-top: 1rem;
+    }
+}
+
+main.desktop{
+    .rewards{
+        p{
+            width: 700px;
+            text-align: center;
+        }
+    }
+}
