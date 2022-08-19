@@ -513,4 +513,13 @@ main.desktop .gameplay .col-lg-6:first-child {
 main.desktop .rewards p {
   width: 700px;
   text-align: center;
+}
+
+footer {
+  width: 100%;
+  background: linear-gradient(106.89deg, #050915 -7.89%, #060B1C 106.45%);
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
