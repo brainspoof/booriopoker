@@ -412,6 +412,13 @@ nav.mobile {
     transform: translateX(0%);
   }
 }
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0 2rem 0;
+}
+
 .hero {
   margin-bottom: 2rem;
 }

@@ -8,6 +8,8 @@
     <title>Boorio Poker</title>
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@701,200,500,301,201,1,300,2,601,600,401,501,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
+
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 </head>
 <body>
     <!-- page background -->
@@ -134,6 +136,29 @@
 
     <!-- Main Content Starts -->
 
+    <div class="video">
+        <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    autoplay
+    width="auto"
+    height="auto"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="./assets/video.mp4" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+    </div>
+
     <main class="mobile">
 
     <div class="hero horizontalcenter">
@@ -226,5 +251,6 @@
     <!-- Main Content Ends -->
 
     <script src="./script.js"></script>
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
 </body>
 </html>
