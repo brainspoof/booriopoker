@@ -499,6 +499,16 @@ main.desktop .main button.download img {
   margin: 0;
 }
 
+span.tryonweb {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.tryonweb a {
+  color: white;
+}
+
 main.desktop .gameplay {
   height: 100vh;
 }
@@ -520,6 +530,19 @@ main.desktop .gameplay .col-lg-6:first-child {
 main.desktop .rewards p {
   width: 700px;
   text-align: center;
+}
+
+.nfts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.nfts img {
+  width: 300px;
+  height: 300px;
 }
 
 footer {

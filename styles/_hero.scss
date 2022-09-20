@@ -91,3 +91,15 @@ main.desktop{
         }
     }
 }
+
+span.tryonweb{
+    width: 250px;
+    display: flex;
+    // background: lightblue;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        color: white;
+    }
+}
