@@ -21,8 +21,8 @@
     <nav class="desktop">
         <img class="logo" src="./assets/pokerlogo.png" alt="Fibswap Logo" style="width: 150px; height: 50px; object-fit:contain;">
 
-        <div class="navicons" onclick="window.open('https://www.boorio.com/', '_blank')">
-            <span class="navicon">
+        <div class="navicons">
+            <span class="navicon" onclick="window.open('https://www.boorio.com/', '_blank')">
                 <img src="./assets/home.png" alt="">
 
                 <p>Home</p>
@@ -52,13 +52,18 @@
                 <p class="active">Buy Crypto</p>
             </span> -->
 
-            <span class="navicon" onclick="window.open('https://t.me/fibswaptechsupport', '_blank')">
+            <span class="navicon" onmouseenter="showDropdown()" onmouseleave="hideDropdown()">
                 <img src="./assets/partners.png" alt="">
                     
                 <p>Partners</p>
+
+                <div class="dropdown">
+                    <p onclick="window.open('https://t.me/fibswaptechsupport', '_blank')">Fibswap Dex</p>
+                    <p onclick="window.open('https://t.me/fibswaptechsupport', '_blank')">Boorio Dev</p>
+                </div>
             </span>
 
-            <span class="navicon" onclick="window.open('https://t.me/fibswaptechsupport', '_blank')">
+            <span class="navicon" onclick="window.open('https://t.me/+w5kP8PNSCBs1NjU0', '_blank')">
                 <img src="./assets/help.png" alt="">
                     
                 <p>Support</p>
@@ -171,7 +176,7 @@
             <img src="./assets/displayimg1.png" alt="First Display">
             <button class="download"><img src="./assets/apple.svg" alt="apple"> <span>Get on iOS</span></button>
             <button class="download"><img src="./assets/playstore.svg" alt="playstore"> <span>Get on Android</span></button>
-            <span class="tryonweb"><a href="#">Try on web</a></span>
+            <span class="tryonweb"><a href="#">Try on web comming soon</a></span>
         </div>
     </div>
 
@@ -211,7 +216,7 @@
 
                 <button class="download"><img src="./assets/apple.svg" alt="apple"> <span>Get on iOS</span></button>
                 <button class="download"><img src="./assets/playstore.svg" alt="playstore"> <span>Get on Android</span></button>
-                <span class="tryonweb"><a href="#">Try on web</a></span>
+                <span class="tryonweb"><a href="#">Try on web comming soon</a></span>
             </div>
 
             <div class="col-lg-6 center">
@@ -235,7 +240,7 @@
             <p class="description">Unlock special rewards by purchasing a "Golden Boorio ticket" with ORIO. Unlock special rewards and extra abilities (create your own tournaments, custom backgrounds and tables as well as NFT rewards and access to monthly championship tables!</p>
             <br>
             <img src="./assets/gift.svg" alt="gift">
-            <button class="accentbtn" onclick="window.open('https://dex.fibswap.io', '_blank')"> <span class="text accent-text">Buy ORIO now</span> </button>
+            <button class="accentbtn" onclick="window.open('https://bsc.fibswap.io/swap?inputCurrency=0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c&outputCurrency=0xa30baba694b8fc3524c46edc5af295f55381dc60', '_blank')"> <span class="text accent-text">Buy ORIO now</span> </button>
         </div>
 
         <div class="rewards horizontalcenter" style="margin-top: 10rem;">
@@ -253,7 +258,7 @@
 
 
     <footer>
-        Copyright © 2022 <span class="accent-text">&nbsp;&nbsp;&nbsp;All Rights Reserved Boorio LTD. Powered by Fibswap DEx</span>
+        <span class="accent-text">© Boorio LTD ® 2022</span>
     </footer>
 
     <!-- Main Content Ends -->

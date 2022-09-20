@@ -2,7 +2,9 @@ nav.desktop{
     height: 90px;
     width: 100vw;
     padding: 20px;
-    overflow-x: hidden;
+    position: relative;
+    // overflow-x: hidden;
+    z-index: 1000;
 
     display: flex;
     justify-content: space-between;
@@ -23,6 +25,7 @@ nav.desktop{
             color: $inactive;
             cursor: pointer;
             transition: 0.3s;
+            position: relative;
 
             &:hover{
                 transform: scale(1.05);
@@ -35,6 +38,19 @@ nav.desktop{
 
             .active{
                 color: $active;
+            }
+
+            .dropdown{
+                position: absolute;
+                background: $background-color;
+                padding: 2rem;
+                width: 200px;
+                top: 55px;
+                display: none;
+
+                p:nth-child(2){
+                    margin-top: 1rem;
+                }
             }
         }
     }

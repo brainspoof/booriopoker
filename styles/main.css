@@ -305,7 +305,8 @@ nav.desktop {
   height: 90px;
   width: 100vw;
   padding: 20px;
-  overflow-x: hidden;
+  position: relative;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -325,6 +326,7 @@ nav.desktop .navicons .navicon {
   color: #8CC5C3;
   cursor: pointer;
   transition: 0.3s;
+  position: relative;
 }
 nav.desktop .navicons .navicon:hover {
   transform: scale(1.05);
@@ -335,6 +337,17 @@ nav.desktop .navicons .navicon img {
 }
 nav.desktop .navicons .navicon .active {
   color: #FFB7D9;
+}
+nav.desktop .navicons .navicon .dropdown {
+  position: absolute;
+  background: linear-gradient(106.89deg, #050915 -7.89%, #060B1C 106.45%);
+  padding: 2rem;
+  width: 200px;
+  top: 55px;
+  display: none;
+}
+nav.desktop .navicons .navicon .dropdown p:nth-child(2) {
+  margin-top: 1rem;
 }
 
 nav.mobile {
@@ -507,6 +520,7 @@ span.tryonweb {
 }
 span.tryonweb a {
   color: white;
+  text-decoration: none;
 }
 
 main.desktop .gameplay {

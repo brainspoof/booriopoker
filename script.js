@@ -10,3 +10,11 @@ function toggle_nav(show){
         element.classList.remove("active");
     }
 }
+
+function showDropdown(){
+    document.querySelector(".dropdown").style.display = "block";
+}
+
+function hideDropdown(){
+    document.querySelector(".dropdown").style.display = "none";
+}
