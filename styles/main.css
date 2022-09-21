@@ -418,6 +418,17 @@ nav.mobile {
   nav.mobile .navicons .navicon .active {
     color: #FFB7D9;
   }
+  nav.mobile .navicons .dropdown {
+    position: absolute;
+    background: linear-gradient(106.89deg, #050915 -7.89%, #060B1C 106.45%);
+    padding: 2rem;
+    width: 200px;
+    top: 55px;
+    display: none;
+  }
+  nav.mobile .navicons .dropdown p:nth-child(2) {
+    margin-top: 1rem;
+  }
   nav.mobile .inactive {
     transform: translateX(-100%);
   }

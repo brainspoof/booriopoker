@@ -131,6 +131,19 @@ nav.mobile{
                     color: $active;
                 }
             }
+
+            .dropdown{
+                position: absolute;
+                background: $background-color;
+                padding: 2rem;
+                width: 200px;
+                top: 55px;
+                display: none;
+
+                p:nth-child(2){
+                    margin-top: 1rem;
+                }
+            }
         }
 
         .inactive{

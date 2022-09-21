@@ -11,10 +11,10 @@ function toggle_nav(show){
     }
 }
 
-function showDropdown(){
-    document.querySelector(".dropdown").style.display = "block";
+function showDropdown(selector){
+    document.querySelector(selector).style.display = "block";
 }
 
-function hideDropdown(){
-    document.querySelector(".dropdown").style.display = "none";
+function hideDropdown(selector){
+    document.querySelector(selector).style.display = "none";
 }
