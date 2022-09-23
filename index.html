@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Boorio Poker</title>
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@701,200,500,301,201,1,300,2,601,600,401,501,400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
 
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
@@ -25,7 +26,7 @@
             <span class="navicon" onclick="window.open('https://www.boorio.com/', '_blank')">
                 <img src="./assets/home.png" alt="">
 
-                <p>Home</p>
+                <p>Boorio</p>
             </span>
 
             <!-- <span class="navicon">
@@ -147,6 +148,28 @@
 
     <!-- Main Content Starts -->
 
+    <main class="mobile">
+
+    <div class="hero horizontalcenter">
+        <p class="announcement description">🎉 It's here! The world's first crypto poker app</p>
+
+        <div class="main horizontalcenter">
+            <h1 class="accent-text">CRYPTO POKER</h1>
+            <p class="description">World's first poker game played with crypto</p>
+
+            <img src="./assets/displayimg1.png" alt="First Display">
+            <!-- <button class="download"><img src="./assets/apple.svg" alt="apple"> <span>Get on iOS</span></button> -->
+            <button class="download" onclick="window.open('https://play.google.com/store/apps/details?id=com.boorio.cryptopoker')"><img src="./assets/playstore.svg" alt="playstore"> <span>Get on Android</span></button>
+            <span class="tryonweb"><a href="./assets/pokerhandbook.pdf" download>Download Manual for the Game</a></span>
+        </div>
+    </div>
+
+    <div class="gameplay horizontalcenter">
+        <h1 class="accent-text">Play Different</h1>
+        <p class="description">Playing with crypto couldn't be easier! Deposit your crypto to our secure server and get playing in minutes. Play a range of different types, from low entry to Sit & Go's. We have created a wonderful playing experience for every skill level.</p>
+        <img src="./assets/displayimg2.png" alt="Second Display">
+    </div>
+
     <div class="video">
         <video
     id="my-video"
@@ -171,31 +194,9 @@
   </video>
     </div>
 
-    <main class="mobile">
-
-    <div class="hero horizontalcenter">
-        <p class="announcement description">🎉 It's here! The world's first crypto poker app</p>
-
-        <div class="main horizontalcenter">
-            <h1 class="accent-text">CRYPTO POKER</h1>
-            <p class="description">World's first poker game played with crypto</p>
-
-            <img src="./assets/displayimg1.png" alt="First Display">
-            <!-- <button class="download"><img src="./assets/apple.svg" alt="apple"> <span>Get on iOS</span></button> -->
-            <button class="download" onclick="window.open('https://play.google.com/store/apps/details?id=com.boorio.cryptopoker')"><img src="./assets/playstore.svg" alt="playstore"> <span>Get on Android</span></button>
-            <!-- <span class="tryonweb"><a href="#">Try on web comming soon</a></span> -->
-        </div>
-    </div>
-
-    <div class="gameplay horizontalcenter">
-        <h1 class="accent-text">Play Different</h1>
-        <p class="description">Playing with crypto couldn't be easier! Deposit your crypto to our secure server and get playing in minutes. Play a range of different types, from low entry to Sit & Go's we have created a wonderful playing experience for every skill range.</p>
-        <img src="./assets/displayimg2.png" alt="Second Display">
-    </div>
-
     <div class="rewards horizontalcenter">
         <h1 class="accent-text">Special Rewards</h1>
-        <p class="description">Unlock special rewards by purchasing a "golden 24 hour ticket" with ORIO. Unlock special rewards and extra abilities (create your own tournaments, custom backgrounds and tables as well as NFT rewards and other bonuses!</p>
+        <p class="description">Unlock special rewards by purchasing a "golden 24 hour ticket" with ORIO. Unlock special rewards and extra abilities (create your own tournaments, custom backgrounds and tables as well as NFT rewards and other bonuses!)</p>
         <img src="./assets/gift.svg" alt="gift">
         <button class="accentbtn"> <span class="text accent-text">Buy ORIO now</span> </button>
     </div>
@@ -223,28 +224,52 @@
 
                 <!-- <button class="download"><img src="./assets/apple.svg" alt="apple"> <span>Get on iOS</span></button> -->
                 <button class="download" onclick="window.open('https://play.google.com/store/apps/details?id=com.boorio.cryptopoker')"><img src="./assets/playstore.svg" alt="playstore"> <span>Get on Android</span></button>
-                <!-- <span class="tryonweb"><a href="#">Try on web comming soon</a></span> -->
+                <span class="tryonweb"><a href="./assets/pokerhandbook.pdf" download>Download Manual for the Game</a></span>
             </div>
 
             <div class="col-lg-6 center">
-                <img class="displayimg" src="./assets/displayimg1.png" alt="First Display">
+                <img style="transform: scale(0.9);" class="displayimg" src="./assets/displayimg1.png" alt="First Display">
             </div>
         </div>
 
         <div class="gameplay row" style="flex-direction: row-reverse;">
             <div class="col-lg-6">
                 <h1 class="accent-text">Play Different</h1>
-                <p class="description">Playing with crypto couldn't be easier! Deposit your crypto to our secure server and get playing in minutes. Play a range of different types, from low entry to Sit & Go's we have created a wonderful playing experience for every skill range.</p>
+                <p class="description">Playing with crypto couldn't be easier! Deposit your crypto to our secure server and get playing in minutes. Play a range of different types, from low entry to Sit & Go's. We have created a wonderful playing experience for every skill level.</p>
             </div>
 
             <div class="col-lg-6 center">
-                <img class="displayimg" src="./assets/displayimg2.png" alt="Second Display">
+                <img style="transform: scale(0.9);" class="displayimg" src="./assets/displayimg2.png" alt="Second Display">
             </div>
+        </div>
+
+        <div class="video">
+            <video
+        id="my-video"
+        class="video-js"
+        controls
+        preload="auto"
+        autoplay
+        muted
+        width="auto"
+        height="auto"
+        poster="MY_VIDEO_POSTER.jpg"
+        data-setup="{}"
+      >
+        <source src="./assets/video.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+          >
+        </p>
+      </video>
         </div>
 
         <div class="rewards horizontalcenter">
             <h1 class="accent-text">Special Rewards</h1>
-            <p class="description">Unlock special rewards by purchasing a "Golden Boorio ticket" with ORIO. Unlock special rewards and extra abilities (create your own tournaments, custom backgrounds and tables as well as NFT rewards and access to monthly championship tables!</p>
+            <p class="description">Unlock special rewards by purchasing a "Golden Boorio ticket" with ORIO. Unlock special rewards and extra abilities (create your own tournaments, custom backgrounds and tables as well as NFT rewards and access to monthly championship tables!)</p>
             <br>
             <img src="./assets/gift.svg" alt="gift">
             <button class="accentbtn" onclick="window.open('https://bsc.fibswap.io/swap?inputCurrency=0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c&outputCurrency=0xa30baba694b8fc3524c46edc5af295f55381dc60', '_blank')"> <span class="text accent-text">Buy ORIO now</span> </button>
@@ -266,6 +291,12 @@
 
     <footer>
         <span class="accent-text">© Boorio LTD ® 2022</span>
+        <div class="socials">
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-discord-fill"></i></a>
+        </div>
     </footer>
 
     <!-- Main Content Ends -->
