@@ -338,7 +338,7 @@ nav.desktop .navicons .navicon img {
 nav.desktop .navicons .navicon .active {
   color: #FFB7D9;
 }
-nav.desktop .navicons .navicon .dropdown {
+nav.desktop .navicons .navicon .dropdown, nav.desktop .navicons .navicon .social {
   position: absolute;
   background: linear-gradient(106.89deg, #050915 -7.89%, #060B1C 106.45%);
   padding: 2rem;
@@ -346,8 +346,19 @@ nav.desktop .navicons .navicon .dropdown {
   top: 55px;
   display: none;
 }
-nav.desktop .navicons .navicon .dropdown p:nth-child(2) {
+nav.desktop .navicons .navicon .dropdown p:nth-child(2), nav.desktop .navicons .navicon .social p:nth-child(2) {
   margin-top: 1rem;
+}
+nav.desktop .navicons .navicon .social .socialcontent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.desktop .navicons .navicon .social .socialcontent a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 nav.mobile {
@@ -418,7 +429,7 @@ nav.mobile {
   nav.mobile .navicons .navicon .active {
     color: #FFB7D9;
   }
-  nav.mobile .navicons .dropdown {
+  nav.mobile .navicons .dropdown, nav.mobile .navicons .social {
     position: absolute;
     background: linear-gradient(106.89deg, #050915 -7.89%, #060B1C 106.45%);
     padding: 2rem;
@@ -426,7 +437,7 @@ nav.mobile {
     top: 55px;
     display: none;
   }
-  nav.mobile .navicons .dropdown p:nth-child(2) {
+  nav.mobile .navicons .dropdown p:nth-child(2), nav.mobile .navicons .social p:nth-child(2) {
     margin-top: 1rem;
   }
   nav.mobile .inactive {

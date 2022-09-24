@@ -40,7 +40,7 @@ nav.desktop{
                 color: $active;
             }
 
-            .dropdown{
+            .dropdown, .social{
                 position: absolute;
                 background: $background-color;
                 padding: 2rem;
@@ -50,6 +50,21 @@ nav.desktop{
 
                 p:nth-child(2){
                     margin-top: 1rem;
+                }
+            }
+
+            .social{
+                .socialcontent{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }
@@ -132,7 +147,7 @@ nav.mobile{
                 }
             }
 
-            .dropdown{
+            .dropdown, .social{
                 position: absolute;
                 background: $background-color;
                 padding: 2rem;
